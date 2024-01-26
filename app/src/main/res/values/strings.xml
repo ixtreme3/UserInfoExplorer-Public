@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">UserInfoExplorer</string>
+    <string name="user_profile_photo">User profile photo</string>
+    <string name="stub_name">Jim Lucas</string>
+    <string name="phone_icon">Phone icon</string>
+    <string name="stub_phone_number">(300) 207-9988</string>
+    <string name="stub_location">3129 Country Club Rd</string>
+    <string name="email_icon">Email icon</string>
+    <string name="birthday_cake_icon">Birthday cake icon</string>
+    <string name="location_icon">Location icon</string>
+    <string name="key_icon">Key icon</string>
+    <string name="stub_email">jim.lucas@example.com</string>
+    <string name="stub_birthday">4/6/1988</string>
+    <string name="stub_password">spam</string>
 </resources>

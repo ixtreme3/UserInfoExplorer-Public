@@ -1,4 +1,4 @@
-package com.example.userinfoexplorer.network.model
+package com.example.userinfoexplorer.data.network.model
 
 data class Location(
     val street: Street,

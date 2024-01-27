@@ -1,4 +1,4 @@
-package com.example.userinfoexplorer.network
+package com.example.userinfoexplorer.data.network
 
 import com.squareup.moshi.Moshi
 import kotlinx.coroutines.runBlocking

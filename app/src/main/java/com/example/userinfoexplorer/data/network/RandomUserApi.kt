@@ -1,6 +1,6 @@
-package com.example.userinfoexplorer.network
+package com.example.userinfoexplorer.data.network
 
-import com.example.userinfoexplorer.network.model.UserResponse
+import com.example.userinfoexplorer.data.network.model.UserResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 

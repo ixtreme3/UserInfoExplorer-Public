@@ -1,4 +1,4 @@
-package com.example.userinfoexplorer.screens.user
+package com.example.userinfoexplorer.ui.user
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

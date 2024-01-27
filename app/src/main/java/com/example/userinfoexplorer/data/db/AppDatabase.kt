@@ -1,4 +1,4 @@
-package com.example.userinfoexplorer.db
+package com.example.userinfoexplorer.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

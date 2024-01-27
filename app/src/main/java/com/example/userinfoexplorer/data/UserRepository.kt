@@ -1,6 +1,7 @@
-package com.example.userinfoexplorer.network
+package com.example.userinfoexplorer.data
 
-import com.example.userinfoexplorer.network.model.UserResponse
+import com.example.userinfoexplorer.data.network.RandomUserApi
+import com.example.userinfoexplorer.data.network.model.UserResponse
 
 class UserRepository(private val api: RandomUserApi) {
     suspend fun getUserList(page: Int, results: Int, seed: String): UserResponse {

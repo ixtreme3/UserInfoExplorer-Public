@@ -1,4 +1,4 @@
-package com.example.userinfoexplorer.screens.user
+package com.example.userinfoexplorer.ui.user
 
 import androidx.lifecycle.ViewModel
 

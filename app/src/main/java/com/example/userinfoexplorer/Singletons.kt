@@ -1,8 +1,8 @@
 package com.example.userinfoexplorer
 
 import android.content.Context
-import com.example.userinfoexplorer.network.RandomUserApi
-import com.example.userinfoexplorer.network.UserRepository
+import com.example.userinfoexplorer.data.network.RandomUserApi
+import com.example.userinfoexplorer.data.UserRepository
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

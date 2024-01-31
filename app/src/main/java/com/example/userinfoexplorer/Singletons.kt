@@ -11,10 +11,6 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 object Singletons {
     private lateinit var applicationContext: Context
 
-//    val database: AppDatabase by lazy {
-//        Room.databaseBuilder(applicationContext, AppDatabase::class.java, "database.db").build()
-//    }
-
     private const val BASE_URL = "https://randomuser.me"
 
     private val retrofit: Retrofit by lazy {

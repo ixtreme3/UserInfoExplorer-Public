@@ -3,7 +3,7 @@
     <string name="user_profile_photo">User profile photo</string>
     <string name="stub_name">Jim Lucas</string>
     <string name="phone_icon">Phone icon</string>
-    <string name="stub_phone_number">(300) 207-9988</string>
+    <string name="stub_phone_number">(300) 207–9988</string>
     <string name="stub_location">3129 Country Club Rd</string>
     <string name="email_icon">Email icon</string>
     <string name="birthday_cake_icon">Birthday cake icon</string>
@@ -12,4 +12,8 @@
     <string name="stub_email">jim.lucas@example.com</string>
     <string name="stub_birthday">4/6/1988</string>
     <string name="stub_password">spam</string>
+
+    <string name="user_name">%1$s %2$s</string>
+    <string name="user_location">%1$d %2$s</string>
+    <string name="application_icon">Application icon</string>
 </resources>

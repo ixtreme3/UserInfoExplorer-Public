@@ -1,4 +1,4 @@
-package com.example.userinfoexplorer.ui.userlist
+package com.example.userinfoexplorer.ui
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -9,6 +9,8 @@ import com.example.userinfoexplorer.data.network.model.Result
 import com.example.userinfoexplorer.databinding.ItemUserBinding
 
 class UserListAdapter : RecyclerView.Adapter<UserListAdapter.UserViewHolder>() {
+    var callback: Callback? = null
+
     var data = listOf<Result>()
         @SuppressLint("NotifyDataSetChanged")
         set(value) {
@@ -29,14 +31,32 @@ class UserListAdapter : RecyclerView.Adapter<UserListAdapter.UserViewHolder>() {
         holder.bind(data[position])
     }
 
+
     inner class UserViewHolder(private val binding: ItemUserBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: Result) {
-            binding.userPicture.setImageResource(R.drawable.no_image)
-            binding.userName.text = "${item.name.first} ${item.name.last}"
-            binding.location.text = "${item.location.street.number} ${item.location.street.name}"
-            binding.phoneNumber.text = item.phone
+            binding.apply {
+                root.setOnClickListener { callback?.onItemClick(item) }
+                userPicture.setImageResource(R.drawable.no_image)
+
+                val fullName = "${item.name.first} ${item.name.last}"
+                userName.text = fullName
+
+                callback?.loadImage(item.picture.large, binding)
+
+                val locationString = "${item.location.street.number} ${item.location.street.name}"
+                val truncatedLocation =
+                    if (locationString.length > 20) "${locationString.take(20)}.." else locationString
+                location.text = truncatedLocation
+
+                phoneNumber.text = item.phone
+            }
         }
+    }
+
+    interface Callback {
+        fun onItemClick(item: Result)
+        fun loadImage(url: String, binding: ItemUserBinding)
     }
 }

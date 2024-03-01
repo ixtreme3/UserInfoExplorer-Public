@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -72,6 +73,8 @@ class UserFragment : Fragment() {
 
         if (intent.resolveActivity(requireContext().packageManager) != null) {
             startActivity(intent)
+        } else {
+            Log.i(TAG, "activity not resolved")
         }
     }
 
@@ -83,6 +86,8 @@ class UserFragment : Fragment() {
 
         if (intent.resolveActivity(requireContext().packageManager) != null) {
             startActivity(intent)
+        } else {
+            Log.i(TAG, "activity not resolved")
         }
     }
 
@@ -94,6 +99,8 @@ class UserFragment : Fragment() {
 
         if (intent.resolveActivity(requireContext().packageManager) != null) {
             startActivity(intent)
+        } else {
+            Log.i(TAG, "activity not resolved")
         }
     }
 
@@ -106,6 +113,7 @@ class UserFragment : Fragment() {
     }
 
     companion object {
+        private const val TAG = "UserFragment"
         private const val UUID = "USER_UUID"
         fun newInstance(uuid: String) = UserFragment().apply {
             arguments = Bundle().apply {

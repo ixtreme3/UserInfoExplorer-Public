@@ -25,7 +25,7 @@ UserInfoExplorer - это приложение, которое отобража�
 * Material Components - для дизайна пользовательского интерфейса
 
 ## Скриншоты 
-<img src="screenshots/screenshot1.png" alt="Запуск" width=240><img src="screenshots/screenshot2.png" alt="Список пользователей" width=240><img src="screenshots/screenshot3.png" alt="Карточка пользователя" width=240>
+<img src="screenshots/screenshot1.png" alt="Запуск" width=240> <img src="screenshots/screenshot2.png" alt="Список пользователей" width=240> <img src="screenshots/screenshot3.png" alt="Карточка пользователя" width=240>
 
 <img src="screenshots/video.gif" alt="Гиф" width=240>
 
